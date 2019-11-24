@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Luff Checkout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #fff;">
+        <a class="navbar-brand ml-md-5 pl-md-5" href="#">
+            <img src="https://luffbrand.com/wp-content/uploads/2019/03/54435646_260337768186264_8581990032078798848_n.png"
+                width="166px" height="100%" alt="">
+        </a>
+    </nav>
+    <!-- End -->
+
+    <div class="container-fluid">
+        <div class="row mt-0 px-xs-5">
+            <div class="col-12 text-center mb-5" !important>
+                <h1><span style="color: #b194c1">ชำระ</span><span style="color: #4a3f88">เงิน</span></h1>
+            </div>
+            <div class="col-lg-5 ml-auto">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>รายละเอียดที่อยู่ในใบเสร็จ</h4>
+                    </div>
+                    <div class="col-12">
+                        <form id="billingForm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="">ชื่อจริง</label>
+                                        <input type="text" name="" id="firstName" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="">นามสกุล</label>
+                                        <input type="text" name="" id="lastName" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">องค์กร (ถ้ามี)</label>
+                                        <input type="text" name="" id="organize" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">ประเทศ</label>
+                                        <select class="form-control form-control-sm" name="" id="country">
+                                            <option>ไทย</option>
+                                            <option>Country 1</option>
+                                            <option>Country 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">ที่อยู่</label>
+                                        <input type="text" name="" id="address1" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                        <input type="text" name="" id="address2"
+                                            class="form-control form-control-lg mt-2" placeholder=""
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">เขต / อำเภอ</label>
+                                        <input type="text" name="" id="district" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">จังหวัด</label>
+                                        <select class="form-control form-control-sm" name="" id="province">
+                                            <option>ภูเก็ต</option>
+                                            <option>Country 1</option>
+                                            <option>Country 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">รหัสไปรษณีย์</label>
+                                        <input type="text" name="" id="zipCode" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">โทรศัพท์</label>
+                                        <input type="text" name="" id="phoneNumber" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">อีเมล</label>
+                                        <input type="text" name="" id="email" class="form-control form-control-lg"
+                                            placeholder="" aria-describedby="helpId">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5 mr-auto">
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1"
+                                style="font-size: 1.5rem; font-weight: 500; line-height: 1.2;">
+                                จัดส่งไปยังที่อยู่อื่น
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="">บันทึกเพิ่มเติม (ถ้ามี)</label>
+                            <input type="text" name="" id="" class="form-control form-control-lg" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order -->
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <h4>รายการสั่งซื้อของคุณ</h4>
+            </div>
+            <div class="col-10 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>สินค้า</th>
+                            <th class="text-right">มูลค่าสินค้า</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>X4 COLLAGEN PEPTIDE (แพคเกจรายเดือน) × 1</td>
+                            <td class="text-right">฿1,000.00</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">Shipping</td>
+                            <td style="font-weight: bold;" class="text-right">จัดส่งฟรี</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">รวม</td>
+                            <td style="font-weight: bold;" class="text-right">฿1,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <div class=" rounded-lg shadow-sm p-5" style="background-color: rgb(235, 233, 235);">
+
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+
+                        <!-- credit card info-->
+                        <div id="nav-tab-card" class="tab-pane fade show active p-5"
+                            style="background-color: rgb(223, 220, 222);">
+                            <p>Credit / Debit Card <span><i class="fa fa-cc-visa mx-1"></i></span> / <span><i
+                                        class="fa fa-cc-mastercard mx-1"></i></span></p>
+                            <!-- <p class="alert alert-success">Some text success or error</p> -->
+                            <form role="form" id="checkout-form" action="/order" method="POST">
+                                <div class="form-group">
+                                    <label for="username">Full name (on the card)</label>
+                                    <input type="text" name="nameOnCard" placeholder="Jason Doe" required
+                                        class="form-control form-control-lg" id="nameOnCard">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardNumber">Card number</label>
+                                    <div class="input-group">
+                                        <input type="text" name="cardNumber" placeholder="Your card number"
+                                            class="form-control form-control-lg" required id="cardNumber">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text text-muted">
+                                                <i class="fa fa-cc-visa mx-1"></i>
+                                                <i class="fa fa-cc-mastercard mx-1"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label><span class="hidden-xs">Expiration</span></label>
+                                            <div class="input-group">
+                                                <input type="number" placeholder="MM" name="expiryMonth"
+                                                    class="form-control form-control-lg" required id="expiryMonth">
+                                                <input type="number" placeholder="YY" name="expiryYear"
+                                                    class="form-control form-control-lg" required id="expiryYear">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4">
+                                            <label data-toggle="tooltip"
+                                                title="Three-digits code on the back of your card">CVV
+                                                <i class="fa fa-question-circle"></i>
+                                            </label>
+                                            <input type="password" required class="form-control form-control-lg"
+                                                name="securityCode" id="securityCode">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="hidden" class="form-control" name="token" id="token"
+                                            aria-describedby="helpId" placeholder="">
+                                        <input type="hidden" class="form-control" name="billing" id="billing"
+                                            aria-describedby="helpId" placeholder="">
+                                        <input type="hidden" class="form-control" name="shipping" id="shipping"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+                                </div>
+                                <button type="submit" class="subscribe btn btn-outline-success shadow-sm">
+                                    สั่งซื้อ </button>
+                            </form>
+                        </div>
+                        <!-- End -->
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include omise.js. -->
+    <script src="https://cdn.omise.co/omise.js"></script>
+
+    <!-- Include your app.js. -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
